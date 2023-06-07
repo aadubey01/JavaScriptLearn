@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+
+    <body>
+       <script>
+         const product2 = {
+            name:'shoes',
+            'delivery-time ' : '1 day',
+            rating:{
+                stars:4.5,
+                count :87
+            },
+            fun:function function1(){
+                console.log('function inside object');
+            }
+         };
+        /* we will use built in json object to convert js objects into JSON
+   /* json is a kind of syntax, or it is used to create objects in js */
+            //console.log( JSON.stringfy(product2));
+           // const json_string =JSON.stringfy(product2);
+           // console.log(JSON.parse(jsonString));
+
+           const object1 ={
+            message: 'Good Object!',
+            price:455
+           };
+           //const message= object1.message;
+           const { message,price } = object1;
+           console.log(message);
+           //both of the codes 30 and 31 are equal the method and variable  are same thus we did a Destruction
+           
+
+            //javaScript has  a special feature of auto boxing which can wrap around any datatype in an object such that they can have 
+            //properties and methods just like objects for example strings.
+            //*objects are like references.
+
+        </script>
+    </body>
+ </html>
